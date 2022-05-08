@@ -1,0 +1,266 @@
+.header {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 7px;
+  padding: 17px 15px;
+
+  color: var(--main-white-color);
+  border-radius: 5px;
+  background-color: #65C466;
+}
+
+.header__logo {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.header__hidden {
+  display: none;
+}
+
+.header__phone {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.header__phone-icon {
+  vertical-align: baseline;
+}
+
+.header__phone-caption {
+  margin-top: 5px;
+  margin-right: 1em;
+
+  text-align: right;
+
+  font-size: 12px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.header__btn-call {
+  width: 200px;
+  margin-right: 2em;
+  margin-left: 1em;
+  padding: 1em 2em;
+
+  text-transform: uppercase;
+
+  color: inherit;
+  border: 2px solid var(--main-white-color);
+  border-radius: 5px;
+  background-color: inherit;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.header__btn-call:hover {
+  color: var(--main-green-color);
+  background: var(--main-white-color);
+}
+
+.header__auth {
+  text-align: center;
+}
+
+.header__account-icon {
+  width: 17px;
+  height: 17px;
+}
+
+.header__login {
+  margin-top: 4px;
+
+  text-transform: uppercase;
+
+  font-size: 9px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  width: var(--burger-size);
+  height: var(--burger-size);
+  padding: 2px 0;
+
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+
+  --burger-size: 36px;
+  --burger-line-height: 2px;
+  --burger-line-indent: 4px;
+}
+
+.hamburger__line {
+  width: 66%;
+  height: var(--burger-line-height);
+
+  border-radius: calc(var(--burger-line-height)/2);
+  background-color: var(--main-white-color);
+}
+
+.hamburger>:nth-child(2) {
+  margin: var(--burger-line-indent) 0;
+}
+
+@media screen and (min-width:768px) {
+  .page-wrapper {
+    padding: 0 22px;
+  }
+
+  .header {
+    padding: 22px 31px;
+  }
+
+  .header__logo {
+    font-size: 27px;
+  }
+
+  .hamburger {
+    --burger-size: 49px;
+    --burger-line-height: 3px;
+    --burger-line-indent: 7px;
+  }
+
+  .header:after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    content: '';
+
+    background-color: #C4C4C4;
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+  .page-wrapper {
+    padding: 0 32px;
+  }
+
+  .header {
+    padding: 23px 32px;
+  }
+
+  .header__hidden {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .header:after {
+    bottom: -6px;
+  }
+}
+
+@media screen and (min-width:1336px) {
+  .page-wrapper {
+    padding: 0 83px;
+  }
+
+  .header {
+    padding: 26px 60px;
+  }
+
+  .header__logo {
+    font-size: 32px;
+  }
+
+  .header__phone-icon {
+    width: 13px;
+    height: 13px;
+  }
+
+  .header__phone {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .header__phone-caption {
+    font-size: 14px;
+  }
+
+  .header__btn-call {
+    font-size: 14px;
+  }
+
+  .header__account-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header__login {
+    font-size: 11px;
+  }
+
+  .header:after {
+    bottom: -10px;
+  }
+}
+
+@media screen and (min-width:1920px) {
+  .page-wrapper {
+    padding: 0 128px;
+  }
+
+  .header {
+    padding: 32px 85px;
+  }
+
+  .header__logo {
+    font-size: 45px;
+  }
+
+  .header__phone-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .header__phone {
+    font-size: 31px;
+    line-height: 39px;
+  }
+
+  .header__phone-caption {
+    font-size: 20px;
+  }
+
+  .header__btn-call {
+    width: 284px;
+
+    font-size: 20px;
+  }
+
+  .header__account-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .header__login {
+    font-size: 19px;
+  }
+
+  .header:after {
+    bottom: -10px;
+  }
+}
